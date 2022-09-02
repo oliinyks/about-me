@@ -1,13 +1,13 @@
 $colors: (
-  'accent': rgba(225, 177, 104, 1),
-  'primary-bg': rgba(41, 46, 54, 1),
-  'extra-bg': #fff8f5,
-  'reservation-bg': rgba(41, 46, 54, 0.95),
-  'border': rgba(92, 97, 104, 1),
+  'accent': rgba(219, 99, 0, 1),
+  //   'primary-bg': rgba(41, 46, 54, 1),
+  'extra-bg': rgba(255, 252, 246, 1),
+  //   'reservation-bg': rgba(41, 46, 54, 0.95),
+  //   'border': rgba(92, 97, 104, 1),
   'primary-text': rgba(85, 85, 85, 1),
-  'white': rgba(255, 255, 255, 1),
-  'backdrop': rgba(0, 0, 0, 0.2),
-  'input': rgba(133, 133, 133, 1),
+  //   'white': rgba(255, 255, 255, 1),
+  //   'backdrop': rgba(0, 0, 0, 0.2),
+  //   'input': rgba(133, 133, 133, 1),,,
 );
 
 //приклад вставтляння кольору:: color: getColor('primary-text');
@@ -16,6 +16,12 @@ $colors: (
   @return map-get($colors, $key);
 }
 
-$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+:root {
+  font-size: calc(10px + 1vmin);
+  --bounce: 0.2s cubic-bezier(0.3, 0.3, 0.3, 1);
+  --ease: 0.12s cubic-bezier(0.3, 0.3, 0.3, 1);
+}
+// transition: var(--bounce) 0.1s;
 
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // приклад: transition: transform 250ms $timing-function;

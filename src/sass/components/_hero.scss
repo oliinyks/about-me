@@ -1,0 +1,27 @@
+.hero {
+  background-color: getColor('extra-bg');
+  padding-top: 20px;
+}
+.hero__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__info {
+  width: 550px;
+}
+
+.hero__text {
+  margin-bottom: 57px;
+}
+
+.hero__photo {
+}
+
+.hero__title {
+  font-size: 60px;
+  margin-bottom: 15px;
+  & span {
+    color: getColor('accent');
+  }
+}

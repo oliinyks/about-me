@@ -17,6 +17,54 @@ p {
   margin-bottom: 0;
 }
 
-body{
-	font-family: 'Inter', sans-serif;
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.66em;
+  color: getColor('primary-text');
+}
+section {
+  padding: 120px 0;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.4em;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Sumana', serif;
+  color: getColor('accent');
+  padding: 20px 50px;
+  border: 3px solid getColor('accent');
+  position: relative;
+}
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all 0.5s;
+}
+.button::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.button::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
 }

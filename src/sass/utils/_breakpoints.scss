@@ -1,0 +1,42 @@
+@mixin for-phone-up {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+@mixin for-phone-only {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-up {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 640) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-up {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-only {
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1401px) {
+    @content;
+  }
+}
+
+//приклад: @include for-tablet-up{}

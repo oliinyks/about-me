@@ -1,0 +1,23 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  //   @include for-phone-up {
+  //     width: 320px;
+  //   }
+
+  @include for-tablet-up {
+    width: 600px;
+  }
+
+  @include for-laptop-up {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 904px;
+  }
+
+  @include for-desktop-up {
+    width: 1360px;
+  }
+}

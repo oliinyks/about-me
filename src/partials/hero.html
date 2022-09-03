@@ -1,18 +1,27 @@
 <section class="hero">
+  <div class="wave-box">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
   <div class="container hero__box">
+    <div class="hero__bg-img"></div>
+    <div class="hero__bg-img2"></div>
     <div class="hero__info">
       <h1 class="hero__title title">
-        Hello <br />
-        I’m <span>Svitlana Oliinyk</span>
+        Hello, I’m <span>Svitlana Oliinyk</span>
       </h1>
       <p class="hero__text">
         I've been doing front-end development for a year. Do you need an
-        incredible website? Then contact me
+        incredible website? Then contact me.
       </p>
       <a class="button" href="#">Contact me</a>
     </div>
-    <div class="hero__photo">
-      <img src="./images/hero/hero.png" alt="Svitlana's photo" />
-    </div>
+    <img
+      class="hero__photo"
+      srcset="./images/hero/hero.png 1x, ./images/hero/hero@2x.png 2x"
+      src="./images/hero/hero.png"
+      alt="Svitlana's photo"
+    />
   </div>
 </section>

@@ -1,27 +1,114 @@
 .hero {
-  background-color: getColor('extra-bg');
   padding-top: 20px;
+  @include for-laptop-up {
+    padding-top: 0;
+  }
 }
 .hero__box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
+  @include for-laptop-up {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 .hero__info {
-  width: 550px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include for-laptop-up {
+    text-align: left;
+    display: block;
+  }
 }
-
 .hero__text {
   margin-bottom: 57px;
+  @include for-laptop-up {
+    width: 460px;
+  }
+  @include for-desktop-up {
+    width: 550px;
+  }
+}
+.hero__photo {
+  display: block;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  @include for-laptop-up {
+    width: 40%;
+    margin-top: 0px;
+  }
 }
 
-.hero__photo {
-}
+//-------------hero-title-animation---------------
 
 .hero__title {
-  font-size: 60px;
+  width: 300px;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-size: 24px;
   margin-bottom: 15px;
+  text-align: left;
   & span {
     color: getColor('accent');
+  }
+  @include for-tablet-up {
+    font-size: 45px;
+    width: 520px;
+  }
+  @include for-laptop-up {
+    font-size: 38px;
+    width: 460px;
+  }
+  @include for-desktop-up {
+    font-size: 45px;
+    width: 550px;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+//---------------hero-img----------------------------
+.hero__bg-img {
+  position: absolute;
+  left: 0;
+  top: -50px;
+  background-image: url('../images/hero/circle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 285px;
+  width: 120px;
+  background-position: -50px 0px;
+  z-index: -1;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url('../images/hero/circle@2x.png');
+    }
+  }
+  @include for-tablet-up {
+    top: -70px;
+    background-position: -10px 0px;
+  }
+  @include for-laptop-up {
+    top: 40px;
+    background-position: 0px 0px;
   }
 }

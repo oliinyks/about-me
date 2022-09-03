@@ -52,7 +52,7 @@
   overflow: hidden;
   border-right: 1px solid;
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: left;
   & span {
     color: getColor('accent');
@@ -60,6 +60,7 @@
   @include for-tablet-up {
     font-size: 45px;
     width: 520px;
+    margin-bottom: 40px;
   }
   @include for-laptop-up {
     font-size: 38px;

@@ -1,0 +1,25 @@
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -20px 30px -20px;
+  justify-content: space-around;
+}
+
+.skills__item {
+  margin: 20px;
+}
+.skills__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.skills__in-process {
+  display: flex;
+  justify-content: center;
+  margin: -20px;
+}
+
+.skills__in-process-item {
+  margin: 20px;
+}

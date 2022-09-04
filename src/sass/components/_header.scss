@@ -16,6 +16,10 @@
     background-color: getColor('primary-bg');
     border-radius: 40px;
   }
+  @include for-phone-only {
+    bottom: 140px;
+    right: 140px;
+  }
 }
 //-----------------header-----------
 

@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector("#toggle"),t=document.querySelector(".mobile-menu__list"),n=document.querySelector("#toggle");function c(){t.classList.toggle("is-open")}e.addEventListener("click",c),t.addEventListener("click",(function(e){if(e.target.classList.contains("mobile-menu__link"))return n.checked=!1,c();if(!e.target.classList.contains("mobile-menu__items"))return n.checked=!1,c()}))})();
+//# sourceMappingURL=index.cd19bfa9.js.map

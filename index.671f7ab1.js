@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("#toggle"),t=document.querySelector(".mobile-menu__list"),n=document.querySelector("#toggle");function c(){t.classList.toggle("is-open")}e.addEventListener("click",c),t.addEventListener("click",(function(e){return e.target.classList.contains("mobile-menu__link")?(n.checked=!1,c()):e.target.classList.contains("mobile-menu__items")?void 0:(n.checked=!1,c())}))}();
+//# sourceMappingURL=index.671f7ab1.js.map

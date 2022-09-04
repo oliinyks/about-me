@@ -7,7 +7,7 @@
   z-index: 300;
 
   width: 30px;
-  height: 30px;
+  height: auto;
   border: none;
   outline: none;
   background-color: transparent;
@@ -15,10 +15,6 @@
   &:hover .gotoTop-img {
     background-color: getColor('primary-bg');
     border-radius: 40px;
-  }
-  @include for-phone-only {
-    bottom: 140px;
-    right: 140px;
   }
 }
 //-----------------header-----------

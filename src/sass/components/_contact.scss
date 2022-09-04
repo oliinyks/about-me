@@ -15,10 +15,11 @@ footer {
   justify-content: center;
 }
 .contact__link {
+  --size: 80px;
   display: flex;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: var(--size);
+  height: var(--size);
   border-radius: 23px;
   margin-right: 50px;
   font-size: 60px;
@@ -28,22 +29,27 @@ footer {
   color: rgba(255, 255, 255, 0.7);
   z-index: 5;
   transition: 0.3s;
+  @include for-phone-only {
+    --size: 40px;
+  }
 }
 
 .contact__link::after {
-  content: ' ';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 23px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: -1;
-  transition: 0.3s;
+  @include for-tablet-up {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 23px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+    transition: 0.3s;
+  }
 }
 .contact__link:hover {
   transform: rotate(-15deg);
@@ -53,20 +59,18 @@ footer {
 }
 
 .contact__link::before {
-  content: ' ';
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: getColor('fb-icon');
-  right: -5px;
-  bottom: 0;
-  border-radius: 23px;
-  z-index: -1;
-  transform-origin: 100% 100%;
-  transform: rotate(10deg);
-  transition: 0.3s;
-}
-
-.contact__item:nth-child(2) a::before {
-  background: getColor('github-icon');
+  @include for-tablet-up {
+    content: ' ';
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background: getColor('icon');
+    right: -5px;
+    bottom: 0;
+    border-radius: 23px;
+    z-index: -1;
+    transform-origin: 100% 100%;
+    transform: rotate(10deg);
+    transition: 0.3s;
+  }
 }

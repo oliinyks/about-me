@@ -1,8 +1,5 @@
 .hero {
   padding-top: 20px;
-  @include for-laptop-up {
-    padding-top: 0;
-  }
 }
 .hero__box {
   display: flex;

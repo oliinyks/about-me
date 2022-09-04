@@ -7,6 +7,22 @@
 
 .skills__item {
   margin: 20px;
+  animation: float 5s ease-in-out infinite;
+  &:nth-of-type(1) {
+    animation-delay: 1s;
+  }
+  &:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: 3s;
+  }
+  &:nth-of-type(4) {
+    animation-delay: 4s;
+  }
+  &:nth-of-type(5) {
+    animation-delay: 5s;
+  }
 }
 .skills__title {
   text-align: center;
@@ -22,4 +38,23 @@
 
 .skills__in-process-item {
   margin: 20px;
+  animation: float 5s ease-in-out infinite;
+  &:nth-of-type(1) {
+    animation-delay: 1s;
+  }
+  &:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

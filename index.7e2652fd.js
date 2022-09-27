@@ -1,2 +1,0 @@
-const o=document.getElementById("goToTop"),t=document.querySelector(".wave-box");window.onscroll=function(){o.style.transition="var(--bounce) 0.1s",t.style.transition="var(--bounce) 0.1s",document.body.scrollTop>150||document.documentElement.scrollTop>150?(o.style.opacity="1",t.style.opacity="0"):(o.style.opacity="0",t.style.opacity="1")},o.addEventListener("click",(function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}));
-//# sourceMappingURL=index.7e2652fd.js.map

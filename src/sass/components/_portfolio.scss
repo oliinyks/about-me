@@ -4,6 +4,11 @@
     justify-content: center;
   }
 }
+.portfolio__team-title{
+	margin: 60px;
+	font-weight: 400;
+	text-align: center;
+}
 .portfolio__items {
   margin: -20px auto;
   text-align: center;
@@ -141,4 +146,29 @@
       background-image: url('../images/portfolio/furniture@2x.jpeg');
     }
   }
+}
+
+.portfolio__team:nth-of-type(1){
+	background: url('../images/portfolio/film.jpg');
+	background-size: cover;
+	background-position: center;
+	@media screen and (min-device-pixel-ratio: 2),
+	  screen and (min-resolution: 192dpi),
+	  screen and (min-resolution: 2dppx) {
+	  & {
+		 background-image: url('../images/portfolio/film.jpg');
+	  }
+	}
+}
+.portfolio__team:nth-of-type(2){
+	background: url('../images/portfolio/donut.jpg');
+	background-size: cover;
+	background-position: center;
+	@media screen and (min-device-pixel-ratio: 2),
+	  screen and (min-resolution: 192dpi),
+	  screen and (min-resolution: 2dppx) {
+	  & {
+		 background-image: url('../images/portfolio/donut.jpg');
+	  }
+	}
 }
